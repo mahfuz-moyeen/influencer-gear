@@ -1,33 +1,34 @@
 /*--------------
  all containe style 
  ------------------*/
+ 
 body{
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 main{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 0 120px;
 }
 .flexible-display{
     display: flex;
 }
 
-
-
 /*---------------
     navber style
  ---------------- */
- .navbar{
+.navbar{
      justify-content: space-between;
      align-items: center;
      margin: 70px 120px 0 120px;
- }
+}
 .nav-title h1{
     font-size: 24px;
     font-weight: bold;
     color: #3A3A3A;
 }
-
 .nav-link a{
     text-decoration: none;
     font-size: 16px;
@@ -38,17 +39,26 @@ main{
 .nav-link i{
     font-size: 20px;
 }
+/* --navbar hover style---  */
+.nav-link a:hover{
+    color: #E02C6D;
+}
 
 /*-------------------
      top-section
  -------------------- */
+.container{
+    width: 1100px;
+    height: 475px;
+    justify-content: center;
+}
 .container-top{
-    display: grid;
-    grid-template-columns: 580px 500px;
-    column-gap: 100px;
-    height: 450px;
-    margin-top: 20px;
-    align-items: center;
+   display: grid;
+   grid-template-columns: 580px 500px;
+   grid-column-gap: 100px;
+   height: 450px;
+   margin-top: 20px;
+   align-items: center;
 }
 
 .container-title h1{
@@ -66,7 +76,7 @@ main{
     padding-right: 20px;
 }
 .container-img{
-    background-image: url(images/Circle\ design.svg);
+    background-image: url(images/Circle-design-01.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -92,11 +102,54 @@ main{
     padding-left: 3px;
 }
 
+/* --top section hover style---  */
+
+.container-title a:hover{
+    text-decoration: none;
+    background: #FFFFFF;
+    color: #E02C6D;
+    border: 1px solid #E02C6D;
+}
+.container-title:hover h1{
+    animation: title-color 4s linear alternate infinite;
+}
+
+@keyframes title-color{
+    0%{
+        color: #3A3A3A;
+    }
+    60%{
+        color: #E02C6D;
+    }
+    100%{
+        color: #E02C6D;
+    }
+  }
+.container-img:hover img{
+    transform: scale(1.1);
+    transition: transform 1s linear;
+}
+.container-img:hover{
+    animation: bg-color 4s linear alternate infinite;
+}
+@keyframes bg-color{
+    0%{
+        background-image: url(images/Circle-design-01.svg);
+    }
+    40%{
+        background-image: url(images/Circle-design-02.svg);
+    }
+    100%{
+        background-image: url(images/Circle-design-02.svg);
+    }
+  }
+
+
+
 /*----------
  company-logo 
  ------------- */
-
- .company-logo{
+.company-logo{
      display: grid;
      grid-template-columns: repeat(7, 150px);
      height: 110px;
@@ -109,6 +162,11 @@ main{
 .company-logo img{
     width: 84px;
     height: 26px;
+}
+/* --compny logo section hover style---  */
+.company-logo img:hover{
+    transform: scale(1.1);
+    transition: transform .2s linear;
 }
 
 /*--------------
@@ -123,14 +181,15 @@ main{
     text-align: center;
     font-weight: 600;
     font-size: 28px;
+    color: #3A3A3A;
 }
 
 .container-shop{
     display: grid;
     grid-template-columns: repeat(3, 330px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
     justify-content: center;
-    column-gap: 30px;
-    row-gap: 30px;
     margin-top: 40px;
 }
  /* -------
@@ -142,7 +201,6 @@ main{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     padding: 15px;
-    
 }
 
 .cart img{
@@ -153,22 +211,162 @@ main{
     color: #18191F;
     font-weight: 700;
     font-size: 28px;
+    margin-bottom: 0;
 }
 .price{
     font-weight: 500;
     font-size: 24px;
     color: rgba(0, 0, 0, 0.87);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .rating{
     font-size: 14px;
-    padding-left: 10px;
+    padding-right: 10px;
 }
-.rating .fas{
+.rating .fas, .far{
     font-size: 12px;
     padding-right: 5px;
     color: orangered;
 }
 .details{
+    margin-top: 5px;
     color:#5E6366;
     padding-right: 50px;
 }
+
+.see-more{
+    width: 95%;
+    display: flex;
+    justify-content: right;
+    margin-top: 50px;
+}
+.see-more a{
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 600;
+    text-align: right;
+}
+.see-more> a> i{
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+/* --cart section hover style---  */
+
+.cart:hover{
+    transform: scale(1.04);
+    transition: transform .5s ease-in-out;
+}
+.cart:hover .cart-title{
+    color: #E02C6D;
+}
+.see-more a:hover{
+    transform: scale(1.05);
+}
+
+
+/*-------------------
+   support section 
+ ------------------ */
+
+.supports{
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.support-cart{
+    position: relative;
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+}
+.support-cart:hover{
+    transform: scale(1.04);
+    transition: transform .5s ease-in-out;
+}
+.fa-headset, .fa-app-store, .fa-mobile-alt{
+    font-size: 70px;
+}
+.support-title{
+    color: #18191F;
+    font-weight: 700;
+    font-size: 25px;
+}
+.support-cart:hover .support-title{
+    color: #E02C6D;
+}
+.support-details{
+    color:#5E6366;
+    padding-right: 50px;
+}
+.support-learn-more{
+    position: absolute;
+    bottom: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    color:#5E6366;
+}
+.support-learn-more:hover{
+    color: #E02C6D;
+}
+
+/*---------------
+    footer 
+-------------- */
+footer{
+    width: 100%;
+    height: 239px;
+    background-color: #0A0826;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-contain{
+    width: 262px;
+    height: 139px;
+    margin-bottom: 20px;
+}
+.footer-contain h1{
+    text-align: center;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+.footer-contain p{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 14px;
+    color: #D9DBE1;
+}
+.footer-icon{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-icon .fab{
+    margin-top: 10px;
+    font-size: 30px;
+    color: #D9DBE1;
+}
+.footer-icon .fab:hover{
+    color: #E02C6D;
+}
+
+/*--------------------------
+ media quiry for modile device
+        Another file
+  >>>>  mobile-view.css <<< 
+----------------------------*/
+
+/*--------------------------
+ media quiry for tablet device
+        Another file
+  >>>>  tab-view.css <<< 
+----------------------------*/

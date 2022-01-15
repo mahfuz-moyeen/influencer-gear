@@ -14,9 +14,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
 
     <!------------ stylesheet file ----------->
     <link rel="stylesheet" href="style.css">
+    
+    <!------------ mobile-view stylesheet file ----------->
+    <link rel="stylesheet" href="mobile-view.css">
+
+    <!------------ tablet-view stylesheet file ----------->
+    <link rel="stylesheet" href="tab-view.css">
 
     <!------------ font-awesome script ----------->
     <script src="https://kit.fontawesome.com/2da5847084.js" crossorigin="anonymous"></script>
@@ -43,8 +52,9 @@
 
     <!-- main  -->
     <main>
-        <!------- top section ------->
-        <section class="container-top">
+       <!------- top section ------->
+       <section class="container">
+        <div class="container-top">
             <div class="container-title">
                 <h1>Start your Journey as <br>Influencer</h1>
                 <p>An influencer is an individual who has a high level of popularity within their industry. They usually
@@ -55,7 +65,8 @@
             <div class="container-img">
                 <img src="images/main-camera.png" alt="a photography camera">
             </div>
-        </section>
+        </div>
+    </section>
 
         <!-------- company-logo section  -->
 
@@ -74,90 +85,142 @@
                 <h1>Popular Collection</h1>
             </div>
             <div class="container-shop">
+                <!-- flex tripod  -->
                 <div class="cart">
                     <img src="images/tripod.png" alt="">
                     <h2 class="cart-title">Flex Tripod</h2>
                     <h3 class="price">$50.48</h3>
                     <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.9
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.5
                     </p>
                     <p class="details">Wordwide shifting available Buyers protection possible!</p>
                 </div>
+                <!-- microphone -->
                 <div class="cart">
-                    <img src="images/tripod.png" alt="">
-                    <h2 class="cart-title">Flex Tripod</h2>
-                    <h3 class="price">$50.48</h3>
+                    <img src="images/mic.png" alt="">
+                    <h2 class="cart-title">Microphone</h2>
+                    <h3 class="price">$120.25</h3>
                     <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.9
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5.0
                     </p>
                     <p class="details">Wordwide shifting available Buyers protection possible!</p>
                 </div>
+                <!-- Airbuds  -->
                 <div class="cart">
-                    <img src="images/tripod.png" alt="">
-                    <h2 class="cart-title">Flex Tripod</h2>
-                    <h3 class="price">$50.48</h3>
+                    <img src="images/airpod.png" alt="">
+                    <h2 class="cart-title">Airbuds</h2>
+                    <h3 class="price">$100.00</h3>
                     <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.9
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
                     </p>
                     <p class="details">Wordwide shifting available Buyers protection possible!</p>
                 </div>
+                <!-- Drone  -->
                 <div class="cart">
-                    <img src="images/tripod.png" alt="">
-                    <h2 class="cart-title">Flex Tripod</h2>
-                    <h3 class="price">$50.48</h3>
+                    <img src="images/drone.png" alt="">
+                    <h2 class="cart-title">Drone</h2>
+                    <h3 class="price">$980.25</h3>
                     <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.9
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5.0
                     </p>
                     <p class="details">Wordwide shifting available Buyers protection possible!</p>
                 </div>
+                <!-- Light Setup  -->
                 <div class="cart">
-                    <img src="images/tripod.png" alt="">
-                    <h2 class="cart-title">Flex Tripod</h2>
-                    <h3 class="price">$50.48</h3>
+                    <img src="images/lights.png" alt="">
+                    <h2 class="cart-title">Light Setup</h2>
+                    <h3 class="price">$1200.00</h3>
                     <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.9
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.7
                     </p>
                     <p class="details">Wordwide shifting available Buyers protection possible!</p>
                 </div>
+                <!-- Photoshoot set  -->
                 <div class="cart">
-                    <img src="images/tripod.png" alt="">
-                    <h2 class="cart-title">Flex Tripod</h2>
-                    <h3 class="price">$50.48</h3>
+                    <img src="images/setup.png" alt="">
+                    <h2 class="cart-title">Photoshoot set</h2>
+                    <h3 class="price">$820.40</h3>
                     <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.9
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.5
                     </p>
                     <p class="details">Wordwide shifting available Buyers protection possible!</p>
                 </div>
+                <!-- Vlogging Camera  -->
                 <div class="cart">
-                    <img src="images/tripod.png" alt="">
-                    <h2 class="cart-title">Flex Tripod</h2>
-                    <h3 class="price">$50.48</h3>
+                    <img src="images/camera.png" alt="">
+                    <h2 class="cart-title">Vlogging Camera</h2>
+                    <h3 class="price">$1800.80</h3>
                     <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.9
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 5.0
                     </p>
                     <p class="details">Wordwide shifting available Buyers protection possible!</p>
                 </div>
+                <!-- Green Screen  -->
                 <div class="cart">
-                    <img src="images/tripod.png" alt="">
-                    <h2 class="cart-title">Flex Tripod</h2>
-                    <h3 class="price">$50.48</h3>
+                    <img src="images/setup.png" alt="">
+                    <h2 class="cart-title">Green Screen</h2>
+                    <h3 class="price">$25.48</h3>
                     <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.9
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> 4.0
                     </p>
                     <p class="details">Wordwide shifting available Buyers protection possible!</p>
                 </div>
+                <!-- Action Camera  -->
                 <div class="cart">
-                    <img src="images/tripod.png" alt="">
-                    <h2 class="cart-title">Flex Tripod</h2>
-                    <h3 class="price">$50.48</h3>
+                    <img src="images/action.png" alt="">
+                    <h2 class="cart-title">Action Camera</h2>
+                    <h3 class="price">$380.00</h3>
                     <p class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.9
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.8
                     </p>
                     <p class="details">Wordwide shifting available Buyers protection possible!</p>
                 </div>
             </div>
+            <div class="see-more">
+                <a href="">See More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+        <!-- support section  -->
+        <section class="container-support">
+            <div class="title">
+                <h1>Our Support</h1>
+            </div>
+            <div class="supports">
+                <div class="support-cart">
+                    <i class="fas fa-headset"></i>
+                    <h2 class="support-title">Live Support</h2>
+                    <p class="support-details">Influencer-Gear support, whenever you need it.</p>
+                    <a class="support-learn-more" href="">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="support-cart">
+                    <i class="fab fa-app-store"></i>
+                    <h2 class="support-title">App Store</h2>
+                    <p class="support-details">Take your store to the next level with new tools and apps from our
+                        Influencer-Gear partners.</p>
+                    <a class="support-learn-more" href="">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="support-cart">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2 class="support-title">Manage on Mobile</h2>
+                    <p class="support-details">Manage business on the go with the Influencer-Gear Mobile App.</p>
+                    <a class="support-learn-more" href="">Learn more <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
         </section>
     </main>
+    <!-- footer  -->
+    <footer>
+        <div class="footer-contain">
+            <h1>Influencer products</h1>
+            <p>Copyright © 2020 influencer products<br>All rights reserved</p>
+            <div class="footer-icon">
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

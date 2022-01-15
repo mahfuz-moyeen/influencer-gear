@@ -1,0 +1,185 @@
+/*--------------------------
+         media quiry
+            for 
+         modile device
+----------------------------*/
+@media only screen and (min-width:690px) and (max-width: 992px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    /*-----------
+        navbar 
+    -----------  */
+
+    .navbar{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .nav-title h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .nav-link a{
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    /*-------------------
+         top-section
+    ------------------- */
+    .container{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .container-top{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 0;
+        justify-content: center;
+        
+    }
+    .container-img{
+        order: 1;
+        width: 257px;
+        height: 257px;
+        margin: auto;
+    }
+    .container-img img{
+        width: 100%;
+        position: static;
+        top: 0;
+        right: 0;
+    }
+    .container-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 2;
+    }
+    .container-title h1{
+        font-size: 28px;
+        line-height: 42px;
+        text-align: center;
+    }
+    .container-title p{
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        margin: 15px;
+    }
+    .container-title a{
+        font-size: 16px;
+    }
+
+    /*----------------
+        company-logo 
+     ---------------- */
+    .company-logo{
+        grid-template-columns: repeat(7,1fr);
+        grid-column-gap: 50px;
+        grid-row-gap: 20px;
+    }
+    .company-logo img{
+        width: 50px;
+        height: 20px;
+        
+    }
+
+    /*----------------
+        shop section 
+     ---------------- */
+    .shops{
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .title h1{
+        text-align: center;
+        font-weight: 600;
+        font-size: 28px;
+        color: #3A3A3A;
+    }
+    
+    .container-shop{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 15px;
+        grid-row-gap: 30px;
+        margin-top: 40px;
+    }
+    /* -------
+        cart  
+    ----------*/
+    .cart img{
+        width: 100%;
+        height: 250px;
+    }
+    .rating{
+        font-size: 16px;
+        padding-right: 10px;
+    }
+    .rating .fas, .far{
+        font-size: 12px;
+        padding-right: 5px;
+        color: orangered;
+    }
+
+    /*-------------------
+    support section 
+    ------------------ */
+    .container-support{
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .supports{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .support-cart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .support-title{
+        text-align: center;
+    }
+    .support-details{
+        color:#5E6366;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /*----------------
+          footer
+     ---------------- */
+
+     footer{
+        width: 100%;
+        height: 239px;
+    }
+    .footer-contain{
+        width: 250px;
+        height: 111px;
+    }
+    .footer-contain h1{
+        font-size: 16px;
+    }
+    .footer-contain p{
+        font-size: 12px;
+    }
+    .footer-icon{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .footer-icon .fab{
+        margin-top: 10px;
+        font-size: 20px;
+        color: #D9DBE1;
+    }
+}
